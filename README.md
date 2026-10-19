@@ -1,14 +1,14 @@
-# Satellite-Guided Assessment of Structural Distortion in SLAM Point Cloud Maps
+# SGASD:Satellite-Guided Assessment of Structural Distortion in SLAM Point Cloud Maps
 
-**Authors:** Yunfei Ma¹†, Gan Zou¹, Jun Cheng¹˒²*
+**Authors:** Yunfei Ma¹˒†, Gan Zou¹, Jun Cheng¹˒²˒*
 
-**Affiliations:** ¹Wuhan Textile University 　 ²Wuhan University of Technology
+**Affiliations:** ¹The School of Computer and Artificial Intelligence, Wuhan Textile University 　 ²The Intelligent Transportation System Research Center, Wuhan University of Technology
 
 **†Project Lead** 　 **\*Corresponding Author**
 
-[![website](https://img.shields.io/badge/Website-Explore%20Now-blueviolet?style=flat&logo=google-chrome)](https://icv-wtu.github.io/slam-eval/)
+[![website](https://img.shields.io/badge/Website-Explore%20Now-blueviolet?style=flat&logo=google-chrome)](https://icv-wtu.github.io/SGASD/)
 [![paper](https://img.shields.io/badge/Paper-PDF-red?style=flat&logo=adobeacrobatreader)](#)
-[![dataset](https://img.shields.io/badge/Dataset-Download-F9D371?style=flat&logo=google&logoColor=white)](https://drive.google.com/file/d/1UlkYz0kKReFsDZU5adD7K9bRvTFB4xi6/view?usp=drive_link)
+[![dataset](https://img.shields.io/badge/Dataset-Download-F9D371?style=flat&logo=google&logoColor=white)](https://opendatalab.org.cn/ICVGroup-WTU/SGASD-DATASET)
 [![github](https://img.shields.io/badge/GitHub-Code-black?style=flat&logo=github)](https://github.com/ICV-WTU/Satellite-Guided-Assessment-of-Structural-Distortion-in-SLAM-Point-Cloud-Maps)
 
 ## Overview
@@ -52,11 +52,11 @@ The self-collected dataset provides two representative outdoor LiDAR sequences, 
 | Campus | Self-collected (Livox HAP) | 566 s | DLO / Livox Mapping |
 | Road | Self-collected (Livox HAP) | 271 s | DLO / Livox Mapping |
 
-**Backpack2025 Seq.2** is taken from a public dataset, sourced from the paper *Towards Degradation-Robust High-Precision Mapping: A Large-Scale LiDAR–Inertial Dataset*, [download link](https://pan.baidu.com/s/1NC8-gMOXunbzX-dPWTFZIQ?pwd=br28) (access code `br28`). Campus and Road are self-collected by our team, [download link](https://drive.google.com/file/d/1UlkYz0kKReFsDZU5adD7K9bRvTFB4xi6/view?usp=drive_link).
+**Backpack2025 Seq.2** is taken from a public dataset, sourced from the paper *Towards Degradation-Robust High-Precision Mapping: A Large-Scale LiDAR–Inertial Dataset*, [download link](https://pan.baidu.com/s/1NC8-gMOXunbzX-dPWTFZIQ?pwd=br28) (access code `br28`). Campus and Road are self-collected by our team, [download link](https://opendatalab.org.cn/ICVGroup-WTU/SGASD-DATASET).
 
 ## MLSD Results
 
-We report MLSD alongside the available trajectory and point-cloud evaluation metrics. APE and RPE describe trajectory error, CD, AWD, and SCS measure geometric discrepancy or spatial consistency, and MLSD summarizes non-similarity in the fitted planar alignment.
+We report MLSD alongside the available trajectory and point-cloud evaluation metrics. APE and RPE describe trajectory error, CD, AWD, and SCS measure geometric discrepancy or spatial consistency, and MLSD summarizes non-similarity in the fitted planar alignment. In the following table, "--" denotes metrics that are unavailable or inapplicable under the reference configuration. DLO Seq.~2 provides ground-truth poses but no ground-truth point cloud, allowing APE and RPE to be computed, whereas CD, AWD, and SCS remain unavailable.
 
 | Sequence | SLAM method | APE ↓ | RPE ↓ | CD ↓ | AWD ↓ | SCS ↓ | MLSD ↓ |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -136,10 +136,10 @@ After installation, `python -m mlsd_ocs_core` or `mlsd-ocs` also works. The inte
 If this work is useful for your research, please cite:
 
 ```bibtex
-@article{ma2026mlsd,
-  title   = {Satellite-Guided Assessment of Structural Distortion in SLAM Point Cloud Maps},
+@article{ma2026sgasd,
+  title   = {SGASD:Satellite-Guided Assessment of Structural Distortion in SLAM Point Cloud Maps},
   author  = {Ma, Yunfei et al.},
-  journal = {Preprint submitted to Elsevier},
+  journal = {Preprint submitted to IEEE},
   year    = {2026}
 }
 ```
