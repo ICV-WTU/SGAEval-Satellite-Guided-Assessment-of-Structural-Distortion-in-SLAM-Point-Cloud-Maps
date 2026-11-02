@@ -139,7 +139,11 @@ If this work is useful for your research, please cite:
 @article{ma2026sgaeval,
   title   = {SGAEval: Satellite-Guided Assessment of Structural Distortion in SLAM Point Cloud Maps},
   author  = {Ma, Yunfei and Zou, Gan and Cheng, Jun},
-  journal = {Preprint submitted to IEEE},
+  journal = {Preprint submitted to Elsevier},
   year    = {2026}
 }
 ```
+
+## License
+
+This project is licensed under the Apache License 2.0 License. See the [LICENSE](LICENSE) file for details.
